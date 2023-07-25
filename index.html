@@ -1,28 +1,59 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-</head>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+    
+    <title>Frontend Mentor | Stats preview card component</title>
 
-<body>
+  </head>
 
-  Get insights that help your business grow.
+  <body>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+    <main>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+      <article class="description">
 
-</body>
+      <!--Title and description-->    
+        <section class="presentationSection">
+          <h1 class="titleArticle">Get insights that help your business grow.</h1>
+
+          <p class="presentationDescription">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+          experience, and overall efficiency.</p>
+        </section>
+
+      <!--Statistics-->  
+        <section class="statisticsSection">
+          <section class="stats">
+            <h2 class="numbersStats">10k+</h2>
+            <p class="statsDesc">companies</p>
+          </section>
+
+          <section class="stats">
+            <h2 class="numbersStats">314</h2>
+            <p class="statsDesc">templates</p>
+          </section>
+
+          <section class="stats">
+            <h2 class="numbersStats">12m+</h2>
+            <p class="statsDesc">queries</p>
+          </section>
+        </section>
+
+      </article>
+
+      <!--Images-->
+      <img src="images/image-header-desktop.jpg" alt="Picture of people laughing and working." class="imageSection">
+      
+    </main>
+
+  </body>
+
 </html>
