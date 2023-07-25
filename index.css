@@ -1,4 +1,121 @@
 /* 
-    Font family : Inter — Weight : 400, 700
-    Font family : Lexend Deca — Weight : 400
+    Font :
+        Family :
+        - Inter — Weight : 400, 700
+        - Lexend Deca — Weight : 400
+
+        Size :
+        - Title : 
+        - Paragraph : 1 rem
 */
+
+/*
+    Color :
+        Primary :
+        - Very dark blue (main background): hsl(233, 47%, 7%)
+        - Dark desaturated blue (card background): hsl(244, 38%, 16%)
+        - Soft violet (accent): hsl(277, 64%, 61%)
+
+        Neutral :
+        - White (main heading, stats): hsl(0, 0%, 100%)
+        - Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+        - Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+*/
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    width: 1115px;
+    height: 450px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.description{
+    flex: 1;
+    padding: 70px 125px 70px 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title and description */
+
+.presentationSection{
+    flex: 4.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titleArticle{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.2em;
+}
+
+.accent{
+    color: hsl(277, 64%, 61%);
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.presentationDescription{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+/* Statistics */
+.statisticsSection{
+    flex: 3.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.numbersStats{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.statsDesc{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca';
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    padding-top: 5px;
+}
+
+/* Images */
+.imageSection{
+    background-color: hsl(277, 65%, 38%);
+}
+
+.imageSection img{
+    width: 100%;
+    height: 100%;
+    opacity: 40%;
+}
