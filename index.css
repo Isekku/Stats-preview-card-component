@@ -65,7 +65,7 @@ main{
     color: hsl(0, 0%, 100%);
     font-family: 'Inter';
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 1.2em;
 }
 
@@ -77,6 +77,7 @@ main{
 }
 
 .presentationDescription{
+    padding-top: 25px;
     color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Inter';
     font-weight: 300;
