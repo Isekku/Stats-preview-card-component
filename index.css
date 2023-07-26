@@ -39,8 +39,8 @@ body{
 main{
     background-color: hsl(244, 38%, 16%);
     display: flex;
-    width: 1115px;
-    height: 450px;
+    width: 1110px;
+    height: 445px;
     border-radius: 7px;
 }
 
@@ -54,7 +54,7 @@ main{
 
 .centeredDescription{
     width: 75%;
-    height: 73%;
+    height: 75%;
     display: flex;
     flex-direction: column;
 }
@@ -73,8 +73,8 @@ main{
     color: hsl(0, 0%, 100%);
     font-family: 'Inter';
     font-weight: 700;
-    font-size: 2.25rem;
-    line-height: 1.2em;
+    font-size: 2.23rem;
+    line-height: 1.3em;
 }
 
 .accent{
@@ -127,6 +127,9 @@ main{
 .imageSection{
     flex: 1;
     background-color: hsl(277, 65%, 38%);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    overflow: hidden;
 }
 
 .imageSection div{
@@ -140,25 +143,57 @@ main{
 /* Phone version */
 
 @media screen and (max-width: 480px) {
-    body{
-        background-color: blue;
-    }
 
     main{
         flex-direction: column-reverse;
         width: 320px;
         height: 760px;
-        background-color: red;
     }
 
     .description{
+        flex: 2.3;
+    }
+
+    .centeredDescription{
+        height: 90%;
+    }
+
+    .titleArticle{
         flex: 1;
-        background-color: green;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .presentationDescription{
+        flex: 2;
+        font-size: 0.9rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .statisticsSection{
+        flex: 4;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .imageSection{
         flex: 1;
-        width: 100%;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 7px;
         height: 100%;
+        width: 100%;
+    }
+
+    .imageSection div{
+        background-image: url(images/image-header-mobile.jpg);
+        background-size: cover;
     }
 }
